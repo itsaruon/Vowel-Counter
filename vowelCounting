@@ -1,0 +1,15 @@
+def vowel():
+    print("Enter a string: ")
+    s = input().lower()  # Convert the input string to lowercase to handle both upper and lowercase vowels
+    v = 0
+
+    print("Old String:", s.upper())
+    vowels = "aeiou"  # A string containing all the vowels
+    for i in s:
+        if i in vowels:
+            v += 1
+            s = s.replace(i, "*")
+    print("New String:", s.upper())
+    print("Number of vowel characters:", v)
+
+vowel()
